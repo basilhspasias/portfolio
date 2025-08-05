@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    .hero {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+    .feature {
+      flex: 1 1 300px;
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      .features { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Welcome to MyApp</h1>
+  <p>The best app to manage your tasks efficiently</p>
+  <button>Get Started</button>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <h3>Fast</h3>
+    <p>Our app is lightning-fast and responsive.</p>
+  </div>
+  <div class="feature">
+    <h3>Secure</h3>
+    <p>All your data is encrypted and protected.</p>
+  </div>
+  <div class="feature">
+    <h3>Easy to Use</h3>
+    <p>Intuitive design for everyone.</p>
+  </div>
+</div>
+
+</body>
+</html>
