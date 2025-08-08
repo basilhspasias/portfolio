@@ -1,69 +1,97 @@
-<html>
+<!DOCTYPE html>
+<html lang="el">
 <head>
-<title>PASIAS</title>
-</head>
-<body bgcolor="=orange">
-    <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title of the document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirSky Airlines</title>
     <style>
-      body {
-        background-image: url('https://bbk.gr/wp-content/uploads/2022/06/jenodoxeio.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #832525;
+            text-align: center;
+        }
+        header {
+            background-color: #003366;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #0055A4;
+            padding: 10px;
+        }
+        nav a {
+            color: rgb(20, 20, 20);
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+        .banner {
+            background: url('https://source.unsplash.com/1600x600/?airplane,sky') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .destination {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            background: rgb(236, 232, 232);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #003366;
+            color: rgb(29, 27, 27);
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
-  </head>
-  <body>
-  </body>
-</html>
-<form align= center>
-<h1><font color=blacks>CREEK FIVE STARS HOTELS(PASIAS)</h1>
-<h2>Welcome to Form <bg color="red"></form>
-    
-    <p>Hotel:<select>
-        <options> Hilton
-        <options>caravel
-        <options>holiday in
-        <options>prezident
-        <options>sofitel
-    </select> </p>
-    <p>firstname:<input type="text"></text></p>
-    <p>lastname:<input type="text"></text></p>
-    <p>Address<textarea></textarea></p>
-    <p>Room type:<select>
-    <option>1 BEDS
-    <option>2  BEDS
-    <option>3  BEDS
-    <option>4  BEDS
-    <option>5  BEDS
-     </select> </p>
+</head>
+<body>
 
-     <p>Room No:<select>
-        <option>6
-        <option> 7 
-        <option>  8
-        <option>  9
-        <option>  10
-         </select> </p>
+    <header>
+        AirSky Airlines
+    </header>
 
-     <p>Floor No:
-    <input type="text"></p>
-    <p>arrival date:
-  <input type=date></p>
-  <p>departure date:
-  <input type=date></p>
-  <p><input type= Submit value="submit">
-  <input type=reset value="reset"></p>
-  </body>
-  </html>
+    <nav>
+        <a href="#">Αρχική</a>
+        <a href="#">Προορισμοί</a>
+        <a href="#">Κρατήσεις</a>
+        <a href="#">Επικοινωνία</a>
+    </nav>
 
-    
+    <div class="banner">
+        Καλώς ήρθατε στην AirSky Airlines – Πετάξτε ψηλά μαζί μας!
+    </div>
 
+    <div class="container">
+        <h2>Δημοφιλείς Προορισμοί</h2>
+        <div class="destination">
+            <h3>Παρίσι</h3>
+            <p>Απολαύστε την Πόλη του Φωτός με τις καλύτερες προσφορές.</p>
+        </div>
+        <div class="destination">
+            <h3>Νέα Υόρκη</h3>
+            <p>Εξερευνήστε τη μεγαλούπολη που δεν κοιμάται ποτέ!</p>
+        </div>
+        <div class="destination">
+            <h3>Ντουμπάι</h3>
+            <p>Ζήστε την πολυτέλεια και τις μοναδικές εμπειρίες!</p>
+        </div>
+    </div>
 
-
-
+    <footer>
+        &copy; 2025 AirSky Airlines | Όλα τα δικαιώματα κατοχυρωμένα
+    </footer>
 
 </body>
+</html>
