@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CofeeVibes</title>
+
+    <style>
+        header{
+            width: 100%;
+            background-color: #c2bebe;
+            padding:10px 0 ;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+
+        }
+        body{
+            padding-top: 120px;
+        }
+
+        
+
+       .menu{
+    list-style:none;
+    display: flex;
+    justify-content:center ;
+    gap: 20px;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:center;
+}
+
+.gallery img{
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c2bebe;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+footer{
+    margin-top: 250px;
+    background: #c2bebe;
+    padding: 20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    
+    
+<header>
+    <nav>
+        <!--Logo-->
+        <a href="#home">
+            <img src="CoffeeVibes Logo.png"  alt="CoffeeVibes Logo" class="logo">
+
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="about.html">Σχετικά</a></li>
+            <li><a href="menu.html">Μενού</a></li>
+            <li><a href="contact.html" >Επικοινωνία</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <br>
+    <section id="home">
+        <h1>Fresh Coffee. Cozy Atmosphere.</h1>
+        <p>At CoffeeVibes, we serve specialty coffee roasted with love.</p>
+    </section>
+    <br>
+  <section id="gallery" class="gallery-section">
+    <h2 text-align:center>Our Coffee Moments</h2>
+
+    <div class="gallery">
+        
+            
+        <img src="Coffee cup.jpg" alt="Coffee cup">
+        <img src="gallery2.jpg" alt="Cafe interior">
+        <img src="gallery3.jpg" alt="Latte art">
+        <img src="gallery4.jpg" alt="Coffee beans">
+        <img src="gallery5.jpg" alt="Barista making coffee">
+        <img src="gallery6.jpg" alt="Dessert and coffee">
+        
+    </div>
+</section>
+<a href="about.html" class="btn">Περισσότερα</a>
+
+
+    
+</main>
+
+<footer>
+    <p>© 2025 CoffeeVibes. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>
