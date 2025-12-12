@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Javascript Widget</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: rgb(116, 94, 94);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Portofolio-Interactive JavaScript</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Αρχική</a></li>
+                    <li><a href="#about">Σχετικά</a></li>
+                    <li><a href="#contact">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+            <button id="toggleDark">Dark Mode</button>
+        </header>
+
+        <main>
+            <section id="dateTime" class="card">
+                <h2>1) Ημερομηνία & ώρα</h2>
+                <p id="time"></p>
+            </section>
+
+            <section id="slideshowSection" class="card">
+                <h2>2) Slideshow</h2>
+                <img id="slide" width="250" src="img1.jpg"/>
+                <div class="buttons">
+                    <button onclick="prevSlide()">Pre</button>
+                    <button onclick="nextSlide()">Next</button>
+                </div>
+            </section>
+
+            <section id="alertSection" class="card">
+                <h2>3) Alert</h2>
+                <button id="showAlert">Εμφάνισε Alert</button>
+            </section>
+
+            <section id="counterSection" class="card">
+                <h2>4) Counter</h2>
+                <div class="buttons">
+                    <span id="count">0</span>
+                    <button onclick="decrement()">-</button>
+                    <button onclick="increment()">+</button>
+                    <button onclick="resetCounter()">Reset</button>
+                </div>
+            </section>
+
+            <section id="photoSection" class="card">
+                <h2>5) Αλλαγή εικόνας</h2>
+                <img id="photo" src="img1.jpg" width="200" onclick="togglePhoto()">
+            </section>
+
+            <section id="saveNameSection" class="card">
+                <h2>6) Αποθήκευση Ονόματος</h2>
+                <input id="username" placeholder="Όνομα"/>
+                <button id="saveName">Αποθήκευση</button>
+                <button id="clearName">Διαγραφή</button>
+                <p id="savedMessage"></p>
+            </section>
+
+            <section id="formSection" class="card">
+                <h2>7) Φόρμα με έλεγχο</h2>
+                <form id="contactForm">
+                    <input id="forName" placeholder="Όνομα"/>
+                    <input id="forEmail" placeholder="Email"/>
+                    <textarea id="formMsg" placeholder="Μήνυμα"></textarea>
+                    <button type="submit">Υποβολή</button>
+                    <p id="formFeedback"></p>
+                </form>
+            </section>
+
+            <section id="home"  class="page" >
+                <h2>Αρχική</h2>
+                <p>Καλώς ήρθατε στο portfolio μου!</p>
+            </section>
+
+            <section id="about" class="page" >
+                <h2>Σχετικά</h2>
+                <p>Λίγα λόγια για μένα και τις δεξιότητές μου.</p>
+            </section>
+
+            <section id="contact" class="page">
+                <h2>Επικοινωνία</h2>
+                <p>Email: basilispasias@gmail.com</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>@2025 Vasilhs Pasias | Web Developer</p>
+        <p>
+            GitHub:
+            <a href="https://github.com/basilhspasias/portfolio" target="_blank">GitHub</a>
+        </p>
+        <p>Email: basilispasias (at) gmail (dot) com</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
+
+
+
+  
+    
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

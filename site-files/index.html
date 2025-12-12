@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vasilhs Pasias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vasilhs Pasias</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Αρχική</a></li>
+                <li><a href="#about">Σχετικά</a></li>
+                <li><a href="#project">Έργα</a></li>
+                <li><a href="#contact">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <h2>Welcome!</h2>
+            <p>This is my portfolio website.</p>
+        </section>
+
+        <section id="about" class="page">
+            <h2>About Me</h2>
+            <p>I am a junior developer learning HTML, CSS, and JavaScript.</p>
+            <div class="about-gallery">
+                <img src="assets/img/about1.jpg" alt="About 1">
+                <img src="assets/img/about2.jpg" alt="About 2">
+                <img src="assets/img/about3.jpg" alt="About 3">
+            </div>
+        </section>
+
+        <section id="project" class="page">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="assets/img/project1.jpg" alt="Project 1">
+                    <h2>Task Manager App</h2>
+                    <p>Simple task manager with JS and localStorage.</p>
+                    <a href="https://github.com/basilhspasias/portfolio" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Επικοινωνία</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Όνομα" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Μήνυμα" required></textarea>
+                <button type="submit">Αποστολή</button>
+                <p id="formFeedback"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>@2025 Vasilis Pasias | Web Developer</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
